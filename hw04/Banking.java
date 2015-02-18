@@ -13,7 +13,7 @@ public class Banking {
     public static void main (String [ ] args) {
         Scanner myScanner;//declares instance of scanner
         myScanner=new Scanner(System.in);//call scanner constructor
-        double accountBalanceX100=1001+(double)(Math.random()*(5000 - 1001)*100);//generates random amount between $1000 and $5000*100
+        double accountBalanceX100=100001+(double)(Math.random()*(5000 - 1001)*100);//generates random amount between $1000 and $5000*100
             int accountBalanceTemp=(int)accountBalanceX100;//converts balance to int for rounding
             double accountBalance=((double)accountBalanceTemp)/100.0;//converts balance back to a double rounded to hundredths place
         System.out.print("Would you like to view your account balance? (yes/no):");//asks if user wants to see account balance
@@ -24,6 +24,9 @@ public class Banking {
                 break;//prevents fallthrough
             case "yes"://if yes is entered...
                 System.out.println("Your current bank account balance is $"+accountBalance);//prints out account balance
+                break;//prevents fallthrough
+            default://if yes or no are not entered...
+                System.out.println("Sorry, that is not a valid input.");//prints out invalid input message
                 break;//prevents fallthrough
         }//end switch statement
         System.out.print("Would you like to deposit money? (yes/no): ");//asks user if they wish to deposit money
@@ -44,6 +47,9 @@ public class Banking {
                     //start else statement
                     System.out.println("That is not a valid amount.");
                 }//end else statement
+                break;//prevents fallthrough
+            default://if yes or no are not entered...
+                System.out.println("Sorry, that is not a valid input.");//prints out invalid input message
                 break;//prevents fallthrough
         }//end switch statement
         System.out.print("Would you like to withdraw money? (yes/no): ");//asks if user would like to withdraw money
@@ -66,6 +72,9 @@ public class Banking {
                     System.out.println("That is not a valid amount or you do not have sufficient funds.");//prints out error message
                 }//end else statement
                 
+                break;//prevents fallthrough
+            default://if yes or no are not entered...
+                System.out.println("Sorry, that is not a valid input.");//prints out invalid input message
                 break;//prevents fallthrough
             }//end switch statement
                 
