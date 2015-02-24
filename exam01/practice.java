@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////
-
+///////
 import java.util.Scanner; 
 
 public class practice{
@@ -8,8 +8,7 @@ public class practice{
         
        
             System.out.println(5%6);
-        }
-        
+    }
         
     
     }
