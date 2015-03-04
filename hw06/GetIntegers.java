@@ -26,13 +26,13 @@ public class GetIntegers {
                     sum=sum+b; //add b to the current value of sum
                 }//end if
                 else{//if b is negative...
-                    System.out.println("Invalid input. Please enter again.");//prints error message
-                    break;//exits program
+                    System.out.println("Invalid input!");//prints error message
+                    return;//exits program
                 }//end else
             }//end if
             else{//if b is not an integer...
-                System.out.println("Invalid input. Please enter again.");//prints out error message
-                break;//exists program
+                System.out.println("Invalid input!");//prints out error message
+                return;//exists program
             }//end else
         }//end for loop
         System.out.println("The sum is "+sum+".");//if 5 valid inputs are given, their sum is printed here
