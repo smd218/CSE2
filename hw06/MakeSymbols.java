@@ -37,8 +37,5 @@ public class MakeSymbols {
         System.out.println();//breaks line
         
     }//end main method
-<<<<<<< HEAD
+
 }//end class
-=======
-}//end class
->>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f
