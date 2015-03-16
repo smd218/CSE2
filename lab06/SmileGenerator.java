@@ -3,7 +3,7 @@
 //CSE2 - Spring 2015
 //Prof. Brian Chen
 //02-27-2015
-//lab07 - SmileGenerator java program
+//lab06 - SmileGenerator java program
 //This program.............
 
 //start class
