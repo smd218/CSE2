@@ -37,4 +37,8 @@ public class GetIntegers {
         }//end for loop
         System.out.println("The sum is "+sum+".");//if 5 valid inputs are given, their sum is printed here
     }//end main method
+<<<<<<< HEAD
 }//end class
+=======
+}//end class
+>>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f

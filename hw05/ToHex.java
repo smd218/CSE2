@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ///////////////////////////////////////////////////////////////////////////////////////
+=======
+////////////////////////////////////////////////////////////////////////////////////////
+>>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f
 //Sophie Davis
 //CSE2 - Spring 2015
 //Prof. Brian Chen
@@ -19,12 +23,21 @@ import java.util.Scanner; //imports scanner utility
 public class ToHex {
     //start main method
     public static void main (String [ ] args) {
+<<<<<<< HEAD
         int R;//declares variable R as int
         int G;//declares variable G as int
         int B;//declares variable B as int
         Scanner myScanner;//declares instance of scanner
         myScanner=new Scanner(System.in);//call scanner constructor
         System.out.println("Please enter three numbers representing RGB values: ");//prompts imput of numbers
+=======
+        int R;
+        int G;
+        int B;
+        Scanner myScanner;//declares instance of scanner
+        myScanner=new Scanner(System.in);//call scanner constructor
+        System.out.println("Please enter three numbers representing RGB values. ");//prompts imput of numbers
+>>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f
         
         System.out.print(" ");//prompts input of first number
         if (myScanner.hasNextInt()) { 
@@ -386,4 +399,8 @@ public class ToHex {
         }//end switch statement 
 
     }//end main method
+<<<<<<< HEAD
 }//end class
+=======
+}//end class
+>>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f

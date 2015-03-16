@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+///////////////////////////////////////////////////////////////
+///////
+import java.util.Scanner; 
+
+>>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f
 public class practice{
     public static void main(String[] args){
         Scanner myScanner;
@@ -13,11 +20,16 @@ public class practice{
            
             if (nStars>=3 && nStars<=33){
        
+<<<<<<< HEAD
                while(pt1<nStars){
                         System.out.print("*");
                         pt1++;
                     }//end while loop
                     System.out.println();
+=======
+            System.out.println(5%6);
+    }
+>>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f
         
                while (rowLength <= nStars){
                  int spaceCounter = 1;

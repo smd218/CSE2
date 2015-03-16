@@ -36,4 +36,8 @@ public class RunFactorial {
             System.out.println("Invalid input!");//prints error message
         }//end else
     }//end main method
+<<<<<<< HEAD
 }//end class
+=======
+}//end class
+>>>>>>> 45c9794c64d14435af020eaaa7d433927eb47d8f
