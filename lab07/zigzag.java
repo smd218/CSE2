@@ -14,8 +14,43 @@ public class zigzag {
     public static void main (String [ ] args) {
         Scanner myScanner;//declare scanner
         myScanner=new Scanner(System.in);//call scanner constructor
-        System.out.println("Enter an int between 3 and 33: ");
-        int nStars=myScanner.nextInt();
+            
+        while (true){   
+            System.out.println("Enter an int between 3 and 33: ");
+            int nStars=myScanner.nextInt();
+        
+            if (!(nStars>=3 && nStars<=33)) {
+                System.out.println("The number is out of range [3,33].");
+                return;
+            }//end if
+            
+                for (int x=1; x<=nStars; x++){
+                    System.out.print("*");
+                }//end for
+                System.out.println();
+                
+                for(int y=1; y<=(nStars - 2); y++){
+                    for(int z=1; z<=y; z++){
+                        System.out.print(" "); //prints out new value of a
+                    }//end inner for loop for odd numbers
+                    System.out.println("*"); //line break
+                }
+                
+                for (int x=1; x<=nStars; x++){
+                    System.out.print("*");
+                }//end for
+                System.out.println();
+            System.out.println("Enter y or Y to go again: ");
+            String goAgain=myScanner.next();
+            switch (goAgain){
+                case "y":
+                    break;
+                case "Y":
+                    break;
+                default:
+                    return;
+            }
+        }
         
         
     }//end main method
