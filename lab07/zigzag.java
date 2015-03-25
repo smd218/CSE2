@@ -4,7 +4,8 @@
 //Prof. Brian Chen
 //03-06-2015
 //lab07 - zigzag java program
-//This program...
+//This program takes input from the user, then prints out that number of stars in a line,
+//then in a decending triangle shape using nested loops, then in another line
 
 
 import java.util.Scanner; //imports scanner
@@ -31,9 +32,9 @@ public class zigzag {
                 
                 for(int y=1; y<=(nStars - 2); y++){
                     for(int z=1; z<=y; z++){
-                        System.out.print(" "); //prints out new value of a
-                    }//end inner for loop for odd numbers
-                    System.out.println("*"); //line break
+                        System.out.print(" "); 
+                    }//end inner for loop
+                    System.out.println("*"); 
                 }
                 
                 for (int x=1; x<=nStars; x++){
