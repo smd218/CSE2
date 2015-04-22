@@ -9,8 +9,6 @@
 //dimentions to be multiplied. If they are not, it prompts the user to input a different dimention. 
 //It then multiplies the two patrices and prints out their product. 
 
-
-
 import java.util.Random; //import utilities
 import java.util.Scanner;
 public class Multiply{
@@ -92,7 +90,6 @@ public class Multiply{
             }//end else
         }//end while
         
-        
         int[][] matrixA = randomMatrix(widthA, heightA);//call method randomMatrix
         System.out.println("MATRIX A: ");
         printMatrix(matrixA);//call method printMatrix 
@@ -103,9 +100,8 @@ public class Multiply{
         
         int [][] multMatrix = matrixMultiply(matrixA,matrixB); //call method matrixMultiply
         printMatrix(multMatrix);// call method printMatrix
-        
-    }//end main method
     
+    }//end main method
     
     public static int [][] randomMatrix(int width, int height){
         int[][] matrix= new int[height][width];//new array with inputted dimensions
@@ -115,7 +111,7 @@ public class Multiply{
                 int randomNum = randomGenerator.nextInt(21)- 10;//stores random num generated 
                    matrix[x][y]=randomNum;//stores random number in array
             }//end for
-        }
+        }//end for
         
     return matrix;//returns matrix array
     }//end method randomMatrix
@@ -125,9 +121,9 @@ public class Multiply{
             System.out.print("[ "); //print bracket at beginning of each line
             for (int j = 0; j<matrix[0].length; j++){
                 System.out.print(matrix[i][j]+" "); //print contents of array
-            }
+            }//end for
             System.out.println("]"); //print closing bracket
-        }
+        }//end for
     }//end method printMatrix
     
     public static int[][] matrixMultiply(int matrixA[][], int matrixB[][]){
@@ -143,7 +139,6 @@ public class Multiply{
             }//end for
             System.out.println("the matrices multiplied equal: ");
         return mult;//return mult array
-        
         }//end if
         
         else{
